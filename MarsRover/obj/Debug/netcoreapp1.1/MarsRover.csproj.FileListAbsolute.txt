@@ -5,3 +5,4 @@ C:\Users\dshrivastav\Desktop\MarsRover\MarsRover\obj\Debug\netcoreapp1.1\MarsRov
 C:\Users\dshrivastav\Desktop\MarsRover\MarsRover\obj\Debug\netcoreapp1.1\MarsRover.AssemblyInfo.cs
 C:\Users\dshrivastav\Desktop\MarsRover\MarsRover\obj\Debug\netcoreapp1.1\MarsRover.dll
 C:\Users\dshrivastav\Desktop\MarsRover\MarsRover\obj\Debug\netcoreapp1.1\MarsRover.pdb
+C:\Users\dshrivastav\Desktop\MarsRover\MarsRover\obj\Debug\netcoreapp1.1\MarsRover.csprojResolveAssemblyReference.cache
