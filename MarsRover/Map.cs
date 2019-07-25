@@ -22,11 +22,11 @@ namespace MarsRover
         public bool isValidMove(Dictionary<string, List<int>> moveForwardData, string currentDirection)
         {
             if (((moveForwardData[currentDirection][0] + CurrentPosition.XCordinate > LastValidPosition.XCordinate)
-                && (moveForwardData[currentDirection][0] + CurrentPosition.XCordinate < 0)))
+                || (moveForwardData[currentDirection][0] + CurrentPosition.XCordinate < 0)))
                 return false;
 
             if (((moveForwardData[currentDirection][1] + CurrentPosition.YCordinate > LastValidPosition.YCordinate)
-                            && (moveForwardData[currentDirection][1] + CurrentPosition.YCordinate < 0)))
+                            || (moveForwardData[currentDirection][1] + CurrentPosition.YCordinate < 0)))
                 return false;
             return true;
         }
