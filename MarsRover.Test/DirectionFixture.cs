@@ -18,14 +18,14 @@ namespace MarsRover.Test
         {
             _direction = new Direction("N");
             _direction.OnMoveLeft();
-            _direction.CurrentDirection.Should().Be("W");
+            _direction.CurrentDirection.Should().Be("NW");
         }
         [Fact]
         public void Direction_should_have_OnMoveRight()
         {
             _direction = new Direction("N");
             _direction.OnMoveRight();
-            _direction.CurrentDirection.Should().Be("E");
+            _direction.CurrentDirection.Should().Be("NE");
         }
         [Fact]
         public void Direction_should_have_OnForward()
@@ -35,7 +35,7 @@ namespace MarsRover.Test
             _direction.OnMoveRight();
             _direction.OnMoveForward(map);
             map.CurrentPosition.XCordinate.Should().Be(2);
-            map.CurrentPosition.YCordinate.Should().Be(2);
+            map.CurrentPosition.YCordinate.Should().Be(3);
         }
     }
 }

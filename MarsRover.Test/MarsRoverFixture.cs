@@ -16,7 +16,7 @@ namespace MarsRover.Test
                 "LFLFLFLFF"
             };
             var helper = new Helper();
-            helper.ProcessInput(input).Should().Be("1 3 N");
+            helper.ProcessInput(input).Should().Be("0 1 S");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace MarsRover.Test
             var map = new Map(new SurfaceCordinate(2, 4), new SurfaceCordinate(5, 5));
             var direction = new Direction("N");
             var rover = new Rover(map, direction);
-            rover.ExecuteInstruction("LLRF").Should().Be("1 4 W");
+            rover.ExecuteInstruction("LLRF").Should().Be("1 5 NW");
         }
     }
 }

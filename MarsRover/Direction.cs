@@ -9,17 +9,26 @@ namespace MarsRover
             CurrentDirection = currentDirection;
             MoveLeftDirection = new Dictionary<string, string>()
             {
-                { "N", "W" },
-                { "W", "S" },
-                { "S", "E" },
-                { "E", "N" }
+                { "N", "NW" },
+                { "W", "SW" },
+                { "S", "SE" },
+                { "E", "NE" },
+                { "NW", "W" },
+                { "NE", "N" },
+                { "SW", "S" },
+                { "SE", "E" },
             };
             MoveRightDirection = new Dictionary<string, string>()
             {
-                { "N", "E" },
-                { "W", "N" },
-                { "S", "W" },
-                { "E", "S" }
+                { "N", "NE" },
+                { "W", "NW" },
+                { "S", "SW" },
+                { "E", "SE" },
+                { "NW", "N" },
+                { "NE", "E" },
+                { "SW", "W" },
+                { "SE", "S" },
+
             };
             MoveForward = new Dictionary<string, List<int>>()
             {
@@ -27,7 +36,10 @@ namespace MarsRover
                 { "E", new List<int>{1, 0} },
                 { "S", new List<int>{0, -1} },
                 { "W", new List<int>{-1, 0} },
-
+                { "NW", new List<int>{-1, 1} },
+                { "NE", new List<int>{1, 1} },
+                { "SW", new List<int>{-1, -1} },
+                { "SE", new List<int>{1, -1} },
             };
         }
         public Dictionary<string, string> MoveLeftDirection { get; private set; }
